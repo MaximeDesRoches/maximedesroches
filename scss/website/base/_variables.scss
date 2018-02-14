@@ -1,0 +1,53 @@
+$black: #000;
+
+$gray20: #333333;
+
+$blue32: #1F2553;
+$red89: #E50C22;
+$yellow: #ed9b13;
+
+$color-text-primary: $gray20;
+$color-title-primary: $black;
+
+$color-accent-primary: #ff3700;
+$color-accent-primary_alt: mix(white, $color-accent-primary, 30%);
+$color-accent-secondary: $red89;
+
+$font-family-title: 'VAG Rounded Std', sans-serif;
+
+$font-weight-thin: 200;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-extrabold: 800;
+$font-weight-black: 900;
+
+$font-size-title1-lg: fs(32px);
+$font-size-title1-md: fs(32px);
+$font-size-title1-sm: fs(32px * 0.8);
+$font-size-title1-xs: fs(32px * 0.8);
+
+$font-size-title2-lg: fs(24px);
+$font-size-title2-md: fs(24px);
+$font-size-title2-sm: fs(24px * 0.8);
+$font-size-title2-xs: fs(24px * 0.8);
+
+$font-size-title3-lg: fs(20px);
+$font-size-title3-md: fs(20px);
+$font-size-title3-sm: fs(20px * 0.8);
+$font-size-title3-xs: fs(20px * 0.8);
+
+	$font-size-text-lg: fs(16px);
+	$font-size-text-md: fs(16px);
+	$font-size-text-sm: fs(16px);
+	$font-size-text-xs: fs(16px);
+
+
+	// Z-INDEXEs
+
+	$index-patch: 10;
+	$index-lumieres: 20;
+	$index-boules: 30;
+	$index-deco: 40;

@@ -1,0 +1,339 @@
+[
+	{
+		"type": "video",
+		"slug": "scene_1",
+		"video_src": "Arcelor-int-pont_roulant-SC1-SC2-montage3-FINAL.mp4",
+		"next": "plan_interactif_sc_2"
+	},
+	{
+		"type": "interactive",
+		"slug": "plan_interactif_sc_2",
+		"video_src": "Arcelor-int-pont_roulant-SC1-SC2-montage2-loop.mp4",
+		"description": "Il y a un problème sur le pont roulant. <br>Quel équipement est essentiel afin de répondre à l’appel?",
+		"description_position": "top",
+		"choices": [
+			{
+				"x": 250,
+				"y": 300,
+				"r": 120,
+				"label_pos": "right",
+				"slug": "wescott",
+				"text_fr": "Clé à molette (wescott)",
+				"text_en": "Wescott",
+				"is_good": false,
+				"opacity": 0.25
+			},
+			{
+				"x": 760,
+				"y": 950,
+				"r": 60,
+				"label_pos": "top",
+				"slug": "tape",
+				"text_fr": "Ruban à conduit",
+				"text_en": "Tape",
+				"is_good": false,
+				"opacity": 0.25
+			},
+			{
+				"x": 500,
+				"y": 950,
+				"r": 60,
+				"label_pos": "top",
+				"slug": "bobine",
+				"text_fr": "Broche",
+				"text_en": "Coil",
+				"is_good": false,
+				"opacity": 0.25
+			},
+			{
+				"x": 1600,
+				"y": 500,
+				"r": 150,
+				"label_pos": "top",
+				"slug": "harnais",
+				"text_fr": "Harnais",
+				"text_en": "Harness",
+				"is_good": true,
+				"opacity": 0.25
+			}
+		],
+		"success": "scene_2_success",
+		"fail": "scene_5A"
+	},
+	{
+		"type": "video",
+		"slug": "scene_2_success",
+		"video_src": "Arcelor-int-pont_roulant-bonne-REPONSE-SC2-FINAL.mp4",
+		"next": "scene_3"
+	},
+	{
+		"type": "video",
+		"slug": "scene_3",
+		"video_src": "Arcelor-int-pont_roulant-SC3-montage3-FINAL.mp4",
+		"next": "plan_interactif_sc_3"
+	},
+	{
+		"type": "interactive",
+		"slug": "plan_interactif_sc_3",
+		"video_src": "Arcelor-int-pont_roulant-SC3-montage2-loop.mp4",
+		"description": "Quels sont les trois gestes reliés à la prévention des accidents que le mécanicien aurait dû poser durant son trajet?",
+		"description_position": "bottom",
+		"choices": [
+			{
+				"x": 240,
+				"y": 200,
+				"r": 60,
+				"label_pos": "right",
+				"slug": "lunettes",
+				"text_fr": "Interpeller un travailleur ne portant pas ses lunettes de sécurité.",
+				"text_en": "Glasses",
+				"is_good": true,
+				"opacity": 0.25
+			},
+			{
+				"x": 240,
+				"y": 400,
+				"r": 60,
+				"label_pos": "right",
+				"slug": "fil",
+				"text_fr": "Ramasser ou protéger la rallonge électrique traînant au sol.",
+				"text_en": "Cord",
+				"is_good": true,
+				"opacity": 0.25
+			},
+			{
+				"x": 240,
+				"y": 600,
+				"r": 60,
+				"label_pos": "right",
+				"slug": "cadenas",
+				"text_fr": "Se cadenasser sur la boite de cadenassage du pont roulant.",
+				"text_en": "Lock",
+				"is_good": true,
+				"opacity": 0.25
+			},
+			{
+				"x": 240,
+				"y": 800,
+				"r": 60,
+				"label_pos": "right",
+				"slug": "trou",
+				"text_fr": "Sécuriser un trou au sol.",
+				"text_en": "Hole",
+				"is_good": false,
+				"opacity": 0.25
+			}
+		],
+		"success": "scene_3A",
+		"fail": "scene_3_fail"
+	},
+	{
+		"type": "video",
+		"slug": "scene_3A",
+		"video_src": "Arcelor-int-pont_roulant-SC3A-montage2.mp4",
+		"next": "scene_4"
+	},
+	{
+		"type": "video",
+		"slug": "scene_3_fail",
+		"video_src": "Arcelor-int-pont_roulant-mauvaise-REPONSE-SC3-FINAL.mp4",
+		"next": "scene_3"
+	},
+	{
+		"type": "video",
+		"slug": "scene_4",
+		"video_src": "Arcelor-int-pont_roulant-SC4-montage2.mp4",
+		"next": "plan_interactif_sc_4"
+	},
+	{
+		"type": "interactive",
+		"slug": "plan_interactif_sc_4",
+		"video_src": "Arcelor-int-pont_roulant-SC4-montage2-loop.mp4",
+		"description": "Le harnais de votre collègue est mal positionné, <br>pouvez-vous identifier les ajustements qu’il doit apporter?",
+		"description_position": "top",
+		"choices": [
+			{
+				"x": 1000,
+				"y": 450,
+				"r": 80,
+				"label_pos": "right",
+				"is_good": true,
+				"slug": "poitrine",
+				"text_fr": "Poitrine",
+				"text_en": "Chest",
+				"opacity": 0
+			},
+			{
+				"x": 900,
+				"y": 880,
+				"r": 100,
+				"label_pos": "right",
+				"slug": "cuisse",
+				"text_fr": "Cuisse",
+				"text_en": "Thigh",
+				"is_good": true,
+				"opacity": 0
+			},
+			{
+				"x": 1200,
+				"y": 800,
+				"r": 100,
+				"label_pos": "top",
+				"slug": "longe",
+				"text_fr": "Longe",
+				"text_en": "Tether",
+				"is_good": true,
+				"opacity": 0
+			},
+			{
+				"x": 1100,
+				"y": 280,
+				"r": 60,
+				"label_pos": "right",
+				"slug": "epaules",
+				"text_fr": "Épaule",
+				"text_en": "Shoulders",
+				"is_good": false,
+				"opacity": 0
+			}
+		],
+		"success": "scene_4_good",
+		"fail": "scene_4_wrong"
+	},
+	{
+		"type": "video",
+		"slug": "scene_4_good",
+		"video_src": "Arcelor-int-pont_roulant-SC4A-montage4-FINAL.mp4",
+		"next": "plan_interactif_sc_4A_good"
+	},
+	{
+		"type": "video",
+		"slug": "scene_4_wrong",
+		"video_src": "Arcelor-int-pont_roulant-SC4A-montage4.mp4",
+		"next": "plan_interactif_sc_4A_wrong"
+	},
+	{
+		"type": "interactive",
+		"slug": "plan_interactif_sc_4A_good",
+		"video_src": "Arcelor-int-pont_roulant-SC4A-montage2-loop.mp4",
+		"description": "Vous devez effectuer une réparation sur le pont roulant, <br>où devriez-vous vous ancrer ?",
+		"description_position": "bottom",
+		"choices": [
+			{
+				"x": 1750,
+				"y": 500,
+				"r": 60,
+				"label_pos": "top",
+				"slug": "barre",
+				"text_fr": "Ligne de vie",
+				"text_en": "Bar",
+				"is_good": false,
+				"opacity": 0.5
+			},
+			{
+				"x": 1040,
+				"y": 550,
+				"r": 60,
+				"label_pos": "top",
+				"slug": "anneau_moteur",
+				"text_fr": "Oreille de levage (lug)",
+				"text_en": "Motor ring",
+				"is_good": false,
+				"opacity": 0.25
+			},
+			{
+				"x": 1250,
+				"y": 360,
+				"r": 60,
+				"label_pos": "top",
+				"slug": "anneau_ancrage",
+				"text_fr": "Anneau d'ancrage",
+				"text_en": "Inking ring",
+				"is_good": true,
+				"opacity": 0.25
+			}
+		],
+		"success": "scene_5D",
+		"fail": "scene_5C"
+	},
+	{
+		"type": "interactive",
+		"slug": "plan_interactif_sc_4A_wrong",
+		"video_src": "Arcelor-int-pont_roulant-SC4A-montage2-loop.mp4",
+		"description": "Vous devez effectuer une réparation sur le pont roulant, où devriez-vous vous ancrer ? (1 choix)",
+		"description_position": "bottom",
+		"choices": [
+			{
+				"x": 1750,
+				"y": 500,
+				"r": 60,
+				"label_pos": "top",
+				"slug": "barre",
+				"text_fr": "Barre",
+				"text_en": "Bar",
+				"is_good": false,
+				"opacity": 0.5
+			},
+			{
+				"x": 1040,
+				"y": 550,
+				"r": 60,
+				"label_pos": "top",
+				"slug": "anneau_moteur",
+				"text_fr": "Anneau du moteur",
+				"text_en": "Motor ring",
+				"is_good": false,
+				"opacity": 0.25
+			},
+			{
+				"x": 1250,
+				"y": 360,
+				"r": 60,
+				"label_pos": "top",
+				"slug": "anneau_encrage",
+				"text_fr": "Anneau d'encrage",
+				"text_en": "Inking ring",
+				"is_good": true,
+				"opacity": 0.25
+			}
+		],
+		"success": "scene_5B",
+		"fail": "scene_5B"
+	},
+	{
+		"type": "video",
+		"slug": "scene_5A",
+		"video_src": "Arcelor-int-pont_roulant-SC5A-montage3.mp4",
+		"next": "scene_6"
+	},
+	{
+		"type": "video",
+		"slug": "scene_5B",
+		"video_src": "Arcelor-int-pont_roulant-SC5B-montage4.mp4",
+		"next": "scene_6"
+	},
+	{
+		"type": "video",
+		"slug": "scene_5C",
+		"video_src": "Arcelor-int-pont_roulant-SC5C-montage3.mp4",
+		"next": "scene_6"
+	},
+	{
+		"type": "video",
+		"slug": "scene_5D",
+		"video_src": "Arcelor-int-pont_roulant-SC5D-montage3.mp4",
+		"next": "scene_7"
+	},
+	{
+		"type": "video",
+		"slug": "scene_6",
+		"video_src": "Arcelor-int-pont_roulant-SC6-montage2.mp4",
+		"next": null
+	},
+	{
+		"type": "video",
+		"slug": "scene_7",
+		"video_src": "Arcelor-int-pont_roulant-SC7-montage2.mp4",
+		"next": null
+	}
+]

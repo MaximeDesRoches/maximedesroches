@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'VAG Rounded Std';
+    src: url('../assets/fonts/VAGRoundedStd-Bold.woff2') format('woff2'),
+        url('../assets/fonts/VAGRoundedStd-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'VAG Rounded Std';
+    src: url('../assets/fonts/VAGRoundedStd-Black.woff2') format('woff2'),
+        url('../assets/fonts/VAGRoundedStd-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'VAG Rounded Std';
+    src: url('../assets/fonts/VAGRoundedStd-Light.woff2') format('woff2'),
+        url('../assets/fonts/VAGRoundedStd-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'VAG Rounded Std';
+    src: url('../assets/fonts/VAGRoundedStd-Thin.woff2') format('woff2'),
+        url('../assets/fonts/VAGRoundedStd-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}

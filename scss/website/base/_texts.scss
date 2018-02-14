@@ -1,0 +1,176 @@
+
+* {
+	-webkit-font-smoothing: antialiased;
+}
+
+%title1 {
+	font-family: $font-family-title;
+	font-size: $font-size-title1-lg;
+	font-weight: $font-weight-black;
+	color: $color-title-primary;
+	margin: 0;
+	line-height: 1;
+
+	strong {
+		color: $color-text-primary;
+	}
+
+	@include responsive-fontsizes((
+		$screen-md-max: $font-size-title1-md,
+		$screen-sm-max: $font-size-title1-sm,
+		$screen-xs-max: $font-size-title1-xs,
+	));
+}
+
+%title2 {
+	font-family: $font-family-title;
+	font-size: $font-size-title2-lg;
+	font-weight: $font-weight-black;
+	color: $color-title-primary;
+	margin: 0 0 1em;
+	line-height: 1;
+
+	strong {
+		color: $color-text-primary;
+	}
+
+	@include responsive-fontsizes((
+		$screen-md-max: $font-size-title2-md,
+		$screen-sm-max: $font-size-title2-sm,
+		$screen-xs-max: $font-size-title2-xs,
+	));
+}
+
+%title3 {
+	font-family: $font-family-title;
+	font-size: $font-size-title3-lg;
+	font-weight: $font-weight-black;
+	color: $color-title-primary;
+	margin: 0 0 1em;
+	line-height: 1;
+
+	strong {
+		color: $color-text-primary;
+	}
+
+	@include responsive-fontsizes((
+		$screen-md-max: $font-size-title3-md,
+		$screen-sm-max: $font-size-title3-sm,
+		$screen-xs-max: $font-size-title3-xs,
+	));
+}
+
+%text {
+	font-family: $font-family-title;
+	font-size: $font-size-text-lg;
+	font-weight: $font-weight-normal;
+	line-height: 1.5;
+
+	@include responsive-fontsizes((
+		$screen-md-max: $font-size-text-md,
+		$screen-sm-max: $font-size-text-sm,
+		$screen-xs-max: $font-size-text-xs,
+	));
+}
+
+* {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+html {
+	font-size: 16px;
+}
+
+body {
+	@extend %text;
+	color: $color-text-primary;
+}
+
+p {
+	@extend %text;
+}
+
+h1 {
+	@extend %title1;
+}
+
+h2 {
+	@extend %title2;
+}
+
+h3 {
+	@extend %title3;
+}
+
+a:not([class]) {
+	color: $color-accent-primary;
+	text-decoration: underline;
+
+	&:hover {
+		color: $color-accent-secondary;
+	}
+}
+
+ul:not([class]) {
+	list-style-type: square;
+	padding-left: 30px;
+}
+
+%table {
+	width: 100% !important;
+	margin: 0 0 20px;
+	border-bottom: 1px solid #ececec;
+	
+	th, td {
+		padding: 20px 10px;
+		vertical-align: top;
+		background: #fefefe;
+
+		:first-child {
+			margin-top: 0;
+		}
+
+		:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	tr:first-of-type > td,
+	tr:first-of-type > th {
+		padding: 5px 10px;
+		background: $color-accent-primary;
+		border: 1px solid $color-accent-primary;
+		color: white;
+		font-weight: $font-weight-semibold;
+	}
+
+	tr:nth-child(even) {
+		th, td {
+			background: #eee;
+		}
+
+		td[rowspan] {
+			background: white;
+			border-bottom: 1px solid #eee;
+		}
+	}
+
+	th,
+	td:first-child {
+		text-align: left;
+		border-left: 1px solid #ececec;
+
+		// p {
+		//     font-weight: $font-weight-bold;
+		// }
+	}
+
+	td:not(:first-child) {
+		border-right: 1px solid #ececec;
+	}
+}
+
+table:not(.nostyle) {
+	@extend %table;
+}

@@ -1,0 +1,54 @@
+{
+  "name": "GR0963GrangeCarteNoel2016",
+  "title": "GR0963 Grange Carte Noel 2016",
+  "version": "0.0.1",
+  "homepage": "",
+  "author": {
+    "name": "La Grange Inc.",
+    "email": "info@la-grange.ca"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-es2015": "latest",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babelify": "latest",
+    "bluebird": "latest",
+    "bower-resolve": "latest",
+    "browserify": "^11.0.0",
+    "colors": "latest",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "latest",
+    "gulp-livereload": "latest",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "latest",
+    "gulp-sourcemaps": "latest",
+    "gulp-uglify": "^1.4.1",
+    "gulp-util": "latest",
+    "howler": "^2.0.2",
+    "imagesloaded": "^4.1.1",
+    "promise": "latest",
+    "resolve": "latest",
+    "source-map-support": "latest",
+    "utils-merge": "latest",
+    "vinyl-buffer": "latest",
+    "vinyl-source-stream": "latest",
+    "watchify": "^3.4.0"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "console-polyfill": "latest",
+    "gsap": "latest",
+    "jquery": "latest"
+  },
+  "browser": {
+    "gsapScrollToPlugin": "gsap/src/uncompressed/plugins/ScrollToPlugin",
+    "greensock": "./src/lagrange/gsap.browserify.js",
+    "DrawSVGPlugin": "./src/vendor/DrawSVGPlugin.min.js",
+    "ns": "./src/app/NameSpace.js",
+    "Promise": "bluebird"
+  },
+  "keywords": []
+}
